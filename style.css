@@ -136,7 +136,7 @@ body {
   top: 0;
   right: 30px;
   width: 100%;
-  max-width: 100px;
+  max-width: 125px;
   z-index: -1;
 }
 
@@ -193,6 +193,10 @@ blockquote {
     grid-template-columns: repeat(2, 1fr);
     max-width: 68%;
   }
+
+  .quotation--mark {
+    right: 50px;
+  }
 }
 
 @media (min-width: 75em) {
@@ -221,5 +225,9 @@ blockquote {
   blockquote {
     font-size: 0.9rem;
     font-weight: var(--fw-500);
+  }
+
+  .quotation--mark {
+    right: 50px;
   }
 }
