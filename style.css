@@ -191,11 +191,11 @@ blockquote {
 @media (min-width: 50em) {
   .grid--container {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 68%;
+    max-width: 90%;
   }
 
   .quotation--mark {
-    right: 50px;
+    right: 60px;
   }
 }
 
@@ -228,6 +228,6 @@ blockquote {
   }
 
   .quotation--mark {
-    right: 50px;
+    right: 80px;
   }
 }
