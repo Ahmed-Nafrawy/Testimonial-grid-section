@@ -1,0 +1,225 @@
+/* Importing google fonts **************************************** */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Coiny&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap");
+
+/* CSS Reset ***************************************************** */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+  transition: 0.3s all;
+}
+
+/* Setting Variables ********************************************* */
+:root {
+  /* Colors */
+
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+  /* Font weight */
+  --fw-500: 500;
+  --fw-600: 600;
+
+  /* Font Family */
+  --ff-paragraph: "Barlow Semi Condensed", sans-serif;
+
+  /* Typography */
+  --fs-normal: 0.8125rem;
+  --fs-medium: 1rem;
+  --fs-large: 1.29rem;
+}
+
+/* Styling the body *********************************************** */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 20px;
+  font-size: var(--fs-normal);
+  background-color: var(--Light-grayish-blue);
+  font-family: var(--ff-paragraph);
+  color: var(--White);
+  /* height: 100svh; */
+}
+
+/* Styling the  GRID Container *********************************************** */
+
+.grid--container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  margin: 3rem auto 0;
+}
+
+/* Styling the  GRID Testimonial *********************************************** */
+
+.testimonial--1 {
+  background-color: var(--Moderate-violet);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgb(25, 33, 46, 0.1);
+  position: relative;
+  isolation: isolate;
+}
+.testimonial--2 {
+  background-color: var(--Very-dark-grayish-blue);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgb(25, 33, 46, 0.1);
+}
+.testimonial--3 {
+  background-color: var(--White);
+  padding: 2rem;
+  border-radius: 10px;
+  color: var(--Very-dark-grayish-blue);
+  box-shadow: 0 10px 10px rgb(25, 33, 46, 0.1);
+}
+.testimonial--4 {
+  background-color: var(--Very-dark-blackish-blue);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgb(25, 33, 46, 0.1);
+}
+.testimonial--5 {
+  background-color: var(--White);
+  padding: 2rem;
+  border-radius: 10px;
+  color: var(--Very-dark-grayish-blue);
+  box-shadow: 0 10px 10px rgb(25, 33, 46, 0.1);
+}
+
+/* Styling the  Heading Section *********************************************** */
+.heading--section {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+/* Styling the  Icons *********************************************** */
+.author--img {
+  display: block;
+  width: 100%;
+  max-width: 45px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid hsl(263, 55%, 70%);
+}
+
+.author--img--2 {
+  border: 3px solid hsl(217, 19%, 70%);
+}
+.author--img--3,
+.author--img--5 {
+  border: 3px solid hsl(0, 0%, 70%);
+}
+
+.quotation--mark {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 100%;
+  max-width: 100px;
+  z-index: -1;
+}
+
+/* Styling the  Testimonial Author *********************************************** */
+
+.name {
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-500);
+  margin-bottom: 0.1rem;
+}
+
+.state {
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-500);
+  opacity: 50%;
+}
+
+/* Styling the  Paragraph Heading *********************************************** */
+
+h3 {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-600);
+  margin-bottom: 1rem;
+}
+
+/* Styling the  Blockquote *********************************************** */
+blockquote {
+  opacity: 70%;
+  font-weight: var(--fw-500);
+  line-height: 1.5;
+}
+
+/* Styling the footer (optional) *********************************************** */
+
+.attribution {
+  font-size: var(--fs-medium);
+  color: var(--Very-dark-blackish-blue);
+  font-weight: var(--fw-600);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--Moderate-violet);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+  color: var(--Very-dark-grayish-blue);
+}
+
+/* Media Queries *********************************************** */
+@media (min-width: 50em) {
+  .grid--container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 68%;
+  }
+}
+
+@media (min-width: 75em) {
+  .grid--container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .testimonial--1 {
+    grid-column: 1/3;
+  }
+  .testimonial--4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .testimonial--5 {
+    grid-column: 4/5;
+    grid-row: 1/-1;
+  }
+
+  h3 {
+    font-size: var(--fs-large);
+    margin-bottom: 2rem;
+  }
+
+  blockquote {
+    font-size: 0.9rem;
+    font-weight: var(--fw-500);
+  }
+}
