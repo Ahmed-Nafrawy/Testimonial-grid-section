@@ -193,6 +193,11 @@ blockquote {
     grid-template-columns: repeat(2, 1fr);
     max-width: 90%;
   }
+  .testimonial--1,
+  .testimonial--4,
+  .testimonial--5 {
+    grid-column: 1/-1;
+  }
 
   .quotation--mark {
     right: 60px;
